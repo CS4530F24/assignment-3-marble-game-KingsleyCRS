@@ -71,7 +71,8 @@ class MainActivity : ComponentActivity() {
                 ballX = (maxWidth / 2) - (ballSizePx / 2)
                 ballY = (maxHeight / 2) - (ballSizePx / 2)
                 gravityFlow.collect { gravity ->
-                    val speedFactor = 10
+                    // speed of ball
+                    val speedFactor = 3
                     // lacation of ball
                     ballX += gravity.x * speedFactor
                     ballY += gravity.y * speedFactor
